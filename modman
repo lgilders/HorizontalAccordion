@@ -1,0 +1,9 @@
+# Directories
+webroot/app/code/local/BlueAcorn/CMSAccordion   app/code/local/BlueAcorn/CMSAccordion
+
+# Files
+webroot/skin/frontend/blueacorn/site/scss/blueacorn/_ba-accordion.scss  skin/frontend/blueacorn/site/scss/blueacorn/_ba-accordion.scss
+webroot/skin/frontend/blueacorn/site/scss/blueacorn/_ba-accordion-mobile.scss  skin/frontend/blueacorn/site/scss/blueacorn/_ba-accordion-mobile.scss
+webroot/skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion.js	skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion.js
+webroot/skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion-mobile.js	skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion-mobile.js
+webroot/app/etc/modules/BlueAcorn_CMSAccordion.xml  app/etc/modules/BlueAcorn_CMSAccordion.xml

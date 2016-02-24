@@ -1,0 +1,148 @@
+.accordion-wrapper {
+    max-width: 1174px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+
+    @include bp(max-width, $bp-small) {
+        display: none;
+    }
+}
+
+.accordion {
+    width: 1179px;
+    height: 434px;
+    position: relative;
+    overflow: hidden;
+    background: $white;
+    margin: 0 auto;
+
+    .panelHolder {
+        float: left;
+        position: relative;
+        padding-right: 0;
+        width: 79px;
+        height: 434px;
+        overflow: hidden;
+        background: $c-blue-light;
+        border-right: 4px solid $white; // If this width is changed, it also needs to be updated in blueacorn-accordion.js
+        cursor: pointer;
+    }
+
+    .contentHolder {
+        float: left;
+        position: relative;
+        background: $white;
+        width: 704px;
+    }
+
+    .content {
+        max-width: 350px;
+        position: absolute;
+        top: 28%;
+        left: 44.25%;
+
+        @include bp(max-width, $bp-large) {
+            top: 8%;
+        }
+
+        h1 {
+            font-family: $f-stack-sans;
+            font-style: italic;
+            font-size: 53px;
+            line-height: 62px;
+            margin-bottom: 0;
+            color: $c-text-accordion !important;
+
+            @include bp(max-width, $bp-large) {
+                font-size: 46px;
+                line-height: 55px;
+            }
+        }
+
+        p {
+            margin-bottom: 0.5em;
+            font-family: $f-stack-helvetica;
+            font-size: 18px;
+            line-height: 28px;
+            color: $c-text-accordion;
+
+            @include bp(max-width, $bp-large) {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        button {
+            font-family: $f-stack-sans;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+            border: 2px solid $c-text-accordion;
+            padding: 0.75em 1.75em;
+            background-color: transparent;
+
+            &:hover {
+                background-color: $c-text-accordion;
+                color: $white;
+            }
+        }
+    }
+
+    .tab {
+        width: 79px;
+        position: absolute;
+        z-index: 1;
+
+        p {
+            margin: 0;
+            padding-left: 20px;
+            font-family: $f-stack-sans;
+            font-size: 22px;
+            line-height: 30px;
+            color: $c-text-accordian-alt;
+            text-transform: uppercase;
+            transform: rotate(-270deg);
+            position: absolute;
+            transition: none;
+            left: 70%;
+            top: 0;
+            transform-origin: top left;
+
+            @include bp(max-width, $bp-large) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .model {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+    }
+
+    .panelTitle.last {
+        padding: 0;
+    }
+
+    .active.panelHolder {
+        width: 704px;
+        cursor: default;
+        background: $white;
+    }
+
+    .active .tab {
+        opacity: 0;
+    }
+
+    .active .model {
+        visibility: visible;
+        z-index: 0;
+        opacity: 1;
+        background-color: $white;
+    }
+
+    .panelHolder.last {
+        border: none;
+    }
+}

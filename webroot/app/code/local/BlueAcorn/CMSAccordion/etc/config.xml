@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BlueAcorn_CMSAccordion>
+            <version>3.0.0</version>
+        </BlueAcorn_CMSAccordion>
+    </modules>
+    <global>
+        <helpers>
+            <blueacorn_cmsaccordion>
+                <class>BlueAcorn_CMSAccordion_Helper</class>
+            </blueacorn_cmsaccordion>
+        </helpers>
+        <resources>
+            <blueacorn_cmsaccordion_setup>
+                <setup>
+                    <module>BlueAcorn_CMSAccordion</module>
+                </setup>
+            </blueacorn_cmsaccordion_setup>
+        </resources>
+    </global>
+</config>

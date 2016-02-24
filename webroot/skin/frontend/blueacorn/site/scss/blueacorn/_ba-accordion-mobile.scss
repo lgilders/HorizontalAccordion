@@ -1,0 +1,174 @@
+.accordion-wrapper-mobile {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+
+    @include bp(max-width, $bp-small) {
+        display: block;
+    }
+}
+
+.accordion-mobile {
+    width: 600px;
+    height: 593px;
+    position: relative;
+    overflow: hidden;
+    background: $white;
+    margin: 0 auto;
+
+    @include bp(max-width, 399px) {
+        background: $c-gray-calloutbox;
+    }
+
+    .panelHolder {
+        float: left;
+        position: relative;
+        padding-right: 0;
+        width: 600px;
+        height: 45px;
+        overflow: hidden;
+        background: $c-blue-light;
+        border-top: 4px solid $white;
+        cursor: pointer;
+    }
+
+    .contentHolder {
+        float: left;
+        position: relative;
+        width: 600px;
+    }
+
+    .content {
+        max-width: 350px;
+        position: absolute;
+        top: 28%;
+        left: 44.25%;
+
+        @include bp(max-width, $bp-large) {
+            top: 8%;
+        }
+
+        @include bp(max-width, $bp-medium) {
+            top: 5%;
+            max-width: 260px;
+        }
+
+        @include bp(max-width, 399px) {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            padding: 1em;
+        }
+
+        h1 {
+            font-family: $f-stack-sans;
+            font-style: italic;
+            font-size: 53px;
+            line-height: 62px;
+            margin-bottom: 0;
+            color: $c-text-accordion !important;
+
+            @include bp(max-width, $bp-large) {
+                font-size: 46px;
+                line-height: 55px;
+            }
+
+            @include bp(max-width, $bp-medium) {
+                font-size: 30px;
+                line-height: 39px;
+            }
+        }
+
+        p {
+            margin-bottom: 0.5em;
+            font-family: $f-stack-helvetica;
+            font-size: 18px;
+            line-height: 28px;
+            color: $c-text-accordion;
+
+            @include bp(max-width, $bp-large) {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        button {
+            font-family: $f-stack-sans;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+            border: 2px solid $c-text-accordion;
+            padding: 0.75em 1.75em;
+            background-color: transparent;
+
+            &:hover {
+                background-color: $c-text-accordion;
+                color: $white;
+            }
+        }
+    }
+
+    .tab {
+        width: 600px;
+        height: 45px;
+        min-height: 45px; // If this height is changed, you also have to update the accordion mobile JavaScript
+        position: absolute;
+        z-index: 1;
+
+        p {
+            margin: 0;
+            padding-left: 20px;
+            font-family: $f-stack-sans;
+            font-size: 16px;
+            line-height: 30px;
+            color: $c-text-accordian-alt;
+            text-transform: uppercase;
+            position: absolute;
+            top: 10%;
+        }
+    }
+
+    .model {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+
+        @include bp(max-width, 399px) {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .panelTitle.last {
+        padding: 0;
+    }
+
+    .active.panelHolder {
+        width: 600px;
+        cursor: default;
+        background: $white;
+
+        @include bp(max-width, 399px) {
+            background: $c-gray-calloutbox;
+        }
+    }
+
+    .active .tab {
+        opacity: 0;
+    }
+
+    .active .model {
+        visibility: visible;
+        z-index: 0;
+        opacity: 1;
+        background-color: $white;
+
+        @include bp(max-width, 399px) {
+            background-color: $c-gray-calloutbox;
+        }
+    }
+}
