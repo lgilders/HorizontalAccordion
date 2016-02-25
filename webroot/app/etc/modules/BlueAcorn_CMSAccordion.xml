@@ -4,9 +4,6 @@
         <BlueAcorn_CMSAccordion>
             <active>true</active>
             <codePool>local</codePool>
-            <depends>
-                <BlueAcorn_CMSBlocks/>
-            </depends>
         </BlueAcorn_CMSAccordion>
     </modules>
 </config>
