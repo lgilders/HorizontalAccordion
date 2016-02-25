@@ -209,8 +209,8 @@ $now = Mage::app()->getLocale()->date()
     ->toString(Varien_Date::DATETIME_INTERNAL_FORMAT);
 
 $CMSAtHomeAccordionBlock = array(
-    'title' => 'CMS AtHome Accordion',
-    'identifier' => 'cms_athome_accordion',
+    'title' => 'CMS Accordion',
+    'identifier' => 'cms_accordion',
     'content' => $CMSAtHomeAccordionContent,
     'creation_time' => $now,
     'update_time' => $now,
