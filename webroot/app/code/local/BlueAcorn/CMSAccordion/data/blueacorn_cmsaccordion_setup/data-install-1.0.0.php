@@ -10,7 +10,7 @@ $installer = $this;
 
 $installer->startSetup();
 
-$CMSAtHomeAccordionContent = <<<CONTENT
+$CMSAccordionContent = <<<CONTENT
 <div class="accordion-wrapper">
     <div class="accordion">
         <div class="panelHolder active">
@@ -208,10 +208,10 @@ $now = Mage::app()->getLocale()->date()
     ->setTimezone(Mage_Core_Model_Locale::DEFAULT_TIMEZONE)
     ->toString(Varien_Date::DATETIME_INTERNAL_FORMAT);
 
-$CMSAtHomeAccordionBlock = array(
+$CMSAccordionBlock = array(
     'title' => 'CMS Accordion',
     'identifier' => 'cms_accordion',
-    'content' => $CMSAtHomeAccordionContent,
+    'content' => $CMSAccordionContent,
     'creation_time' => $now,
     'update_time' => $now,
     'is_active' => 1,
@@ -219,7 +219,7 @@ $CMSAtHomeAccordionBlock = array(
 );
 
 try {
-    Mage::getModel('cms/block')->setData($CMSAtHomeAccordionBlock)->save();
+    Mage::getModel('cms/block')->setData($CMSAccordionBlock)->save();
 } catch(Exception $e){
     Mage::logException($e);
 }
