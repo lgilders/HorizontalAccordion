@@ -7,6 +7,6 @@ webroot/skin/frontend/blueacorn/site/scss/blueacorn/_ba-accordion-mobile.scss  s
 webroot/js/blueacorn/lib/tweenmax/tweenmax.min.js js/blueacorn/lib/tweenmax/tweenmax.min.js
 webroot/skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion.js	skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion.js
 webroot/skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion-mobile.js	skin/frontend/blueacorn/site/js/blueacorn/blueacorn-accordion-mobile.js
-webroot/skin/frontend/blueacorn/site/images/blueacorn/sample.png    skin/frontend/blueacorn/site/images/blueacorn/sample.png
+webroot/skin/frontend/base/default/images/blueacorn/sample.png    skin/frontend/base/default/images/blueacorn/sample.png
 webroot/app/design/frontend/base/default/layout/blueacorn/cmsaccordion.xml  app/design/frontend/base/default/layout/blueacorn/cmsaccordion.xml
 webroot/app/etc/modules/BlueAcorn_CMSAccordion.xml  app/etc/modules/BlueAcorn_CMSAccordion.xml
