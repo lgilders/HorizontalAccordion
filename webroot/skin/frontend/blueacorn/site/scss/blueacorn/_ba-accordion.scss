@@ -24,7 +24,7 @@
         width: 79px;
         height: 434px;
         overflow: hidden;
-        background: $c-blue-light;
+        background: lightblue;
         border-right: 4px solid $white; // If this width is changed, it also needs to be updated in blueacorn-accordion.js
         cursor: pointer;
     }
@@ -52,7 +52,7 @@
             font-size: 53px;
             line-height: 62px;
             margin-bottom: 0;
-            color: $c-text-accordion !important;
+            color: lightgrey !important;
 
             @include bp(max-width, $bp-large) {
                 font-size: 46px;
@@ -62,10 +62,10 @@
 
         p {
             margin-bottom: 0.5em;
-            font-family: $f-stack-helvetica;
+            font-family: $f-stack-sans;
             font-size: 18px;
             line-height: 28px;
-            color: $c-text-accordion;
+            color: lightgrey;
 
             @include bp(max-width, $bp-large) {
                 font-size: 16px;
@@ -78,12 +78,12 @@
             font-size: 14px;
             line-height: 14px;
             text-transform: uppercase;
-            border: 2px solid $c-text-accordion;
+            border: 2px solid lightgrey;
             padding: 0.75em 1.75em;
             background-color: transparent;
 
             &:hover {
-                background-color: $c-text-accordion;
+                background-color: lightgrey;
                 color: $white;
             }
         }
@@ -100,7 +100,7 @@
             font-family: $f-stack-sans;
             font-size: 22px;
             line-height: 30px;
-            color: $c-text-accordian-alt;
+            color: lightgrey;
             text-transform: uppercase;
             transform: rotate(-270deg);
             position: absolute;
