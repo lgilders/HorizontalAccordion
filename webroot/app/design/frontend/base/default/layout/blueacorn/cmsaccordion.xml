@@ -8,7 +8,7 @@
 <layout>
     <default>
         <reference name="head">
-            <action method="addItem"><type>skin_js</type><name>js/lib/tweenmax.min.js</name></action>
+            <action method="addJs"><script>blueacorn/lib/tweenmax/tweenmax.min.js</script></action>
         </reference>
     </default>
 </layout>
